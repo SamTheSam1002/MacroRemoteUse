@@ -2,11 +2,12 @@
 <html lang="en">
 <head>
   <title>Macrodroid Integration</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script src="JS/jquery-3.6.3.js"></script>
 </head>
 <body>
-  <h1 class="centerheading">Macrodroid Automation</h1>
+  <h1 class="centerheading">Macrodroid Remote Connect</h1>
   <div class="box">
     <span class="title">Touch Actions Via </span><br>
     <span style="color:white;font-weight: bold;">Select Method: </span><input type="button" value="X,Y" class="xy selected">
@@ -150,9 +151,11 @@
         <td><span class="button" onclick="senddata('?text=CNOTIBAR')">Collapse Notification Bar</span></td>
         <td><span class="button" onclick="senddata('?Tempvar=alarm')">Ring Alarm At Full Volume</span></td>
       </tr>
-      <tr style="text-align: center;">
-      <td colspan="3"><span class="button" style="width: 90%;" onclick="senddata('?Tempvar=cancel')">Stop Alarm</span></td>
+      <tr>
+       <td> <span class="button" style="width: 90%;" onclick="senddata('?Tempvar=cancel')">Stop Alarm</span></td>
+
       </tr>
+
       <tr style="text-align: center;">
         <td colspan="3">
           <span class="button" style="width: 90%;" onclick="senddata('?Tempvar=location')">Send Location</span>
@@ -167,13 +170,9 @@
       <div>
         <h2>Enter Your Webhook URL Below: </h2>
         <input type="text" id="webhookurl" placeholder="Example: https://trigger.macrodroid.com/13062002-ca94-3fqe-a042-cf22cffe6bwc/enablewebhook">
-        <p><span class="white">Disclaimer:</span> This website will never store or send your private information like webhook url and your activities. For Confirmation, You Can Inspect Code. Thank You<br><br><span class="white">Developer:</span> <span class="heart">&#10084;</span> From Dhruv Chauhan</p><span id="warning"></span>
         <div class="right"><input type="button" id="websaver" value="Proceed"></div>
       </div>
     </div>
-  <center>
-    <div class="spcl" style="color: white;text-align:center;font-weight: bold;">Note: You must have to install macro named <a href="https://macrodroidlink.com/macrostore?id=12667" style="color: rgb(0, 221, 255);text-decoration: none;font-weight: bold;display: inline;">"Control Device Remotely (From Website) 15+ Features"</a> in your device to use this Web controller.<br><br>Developed By: <span class="heart">&#10084;</span> From Dhruv Chauhan</div>
-  </center>
   <iframe src="" width="0" height="0" style={display:none}></iframe>
 </body>
 <script src="JS/main.js"></script>
